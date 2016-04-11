@@ -14,12 +14,7 @@ BeerView = Backbone.View.extend({
   },
 
   destroy: function(){
-    console.log(beerCollection.toJSON());
-    console.log(this.model.toJSON());
-
     this.model.destroy();
-    console.log(this.model.toJSON());
-    console.log(beerCollection.toJSON());
   }
 
 });
