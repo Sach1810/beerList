@@ -33,7 +33,7 @@ events: {
     abv:abv,
     url: url
     });
-}
+  }
 
 
 });
