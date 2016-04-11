@@ -20,6 +20,7 @@ events: {
     var style = $('#style').val();
     var abv = $('#abv').val();
     var url = $('#image').val();
+    var rating = $('#rating').val();
 
     if (url){
       url = url
@@ -31,9 +32,12 @@ events: {
     name:name,
     style:style,
     abv:abv,
-    url: url
+    url: url,
+    rating:rating
     });
   }
+
+
 
 
 });
