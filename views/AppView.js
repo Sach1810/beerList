@@ -16,7 +16,6 @@ events: {
   },
 
   addData:function(){
-    console.log("hi");
     var name = $('#name').val();
     var style = $('#style').val();
     var abv = $('#abv').val();
@@ -34,7 +33,6 @@ events: {
     abv:abv,
     url: url
     });
-    console.log(beerCollection);
 }
 
 
