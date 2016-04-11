@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Beer List</title>
 </head>
 <body>
-hi how
+<input id="name" placeholder="name"/><br>
+<input id="style" placeholder="style"/><br>
+<input id="abv" placeholder="abv"/><br>
+<input id="image" placeholder="image url"/><br>
+<button class="submit">submit</button>
+
+<section class="displayBeer">
+  
+</section>
+
+<script id="post-template" type="text/x-handlebars-template">
+  <div class="review">
+    <h2>{{name}}</h2>
+    {{style}} {{abv}}%<br>
+    <a class="remove">remove</a>
+    <img class="image" src="{{url}}"></img>
+  </div>
+</script>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<script src="node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
+<script src="node_modules/backbone/backbone-min.js"></script>
+<script src="models/BeerModel.js"></script>
+<script src="collections/BeerCollection.js"></script>
+<script src="views/AppView.js"></script>
+<script src="views/BeerView.js"></script>
+<script src="views/AppView.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
