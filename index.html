@@ -28,7 +28,12 @@
     {{style}} {{abv}}<br>
     Rating: {{rating}}<br>
     <img class="image" src="{{url}}"></img>
-    <a class="remove">remove</a>  <a class="edit">edit</a>
+    <a class="remove">remove</a>  <a class="edit">edit</a> <a class="rate">rate</a>
+    <i class="fa fa-star butt" aria-hidden="true" value="1"></i>
+    <i class="fa fa-star butt" aria-hidden="true" value="2"></i>
+    <i class="fa fa-star butt" aria-hidden="true" value="3"></i>
+    <i class="fa fa-star butt" aria-hidden="true" value="4"></i>
+    <i class="fa fa-star butt" aria-hidden="true" value="5"></i>
     <div class="toggle">
       <input id="name1" value="{{name}}" placeholder="name"/><br>
       <input id="style1" value="{{style}}" placeholder="style"/><br>
@@ -41,7 +46,8 @@
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
-<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css"></link>
+<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css"></link>
 <script src="node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
 <script src="node_modules/backbone/backbone-min.js"></script>
 <script src="models/BeerModel.js"></script>

@@ -1,3 +1,3 @@
 var BeerCollection = Backbone.Collection.extend({
-  model: BeerModel
+  model: BeerModel,
 });

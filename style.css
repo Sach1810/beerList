@@ -9,3 +9,23 @@
 .show{
   display: block;
 }
+
+.butts {
+    float: left;
+}
+.butt {
+    display: block;
+    float: right;    
+    width: 16px;
+    height: 16px;
+}
+.butt:hover,
+.butt:hover ~ .butt,
+.butt:hover ~ label {
+    color: orange;
+}
+.butt:checked,
+.butt:checked ~ .butt,
+.butt:checked ~ label {
+    color: red;
+}

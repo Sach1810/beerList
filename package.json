@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Sach1810/beerList#readme",
   "dependencies": {
+    "font-awesome": "^4.5.0",
     "jquery": "^2.2.3"
   }
 }

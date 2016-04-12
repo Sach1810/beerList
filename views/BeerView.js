@@ -3,7 +3,8 @@ BeerView = Backbone.View.extend({
   events:{
     'click .remove':'destroy',
     'click .edit': 'toggle',
-    'click .submit1': 'edit'
+    'click .submit1': 'edit',
+    'click .rate': 'averageRating'
   },
 
   template: Handlebars.compile($('#post-template').html()),
@@ -36,7 +37,16 @@ BeerView = Backbone.View.extend({
     this.model.set('style', style);
     this.model.set('abv', abv);
     this.model.set('url', url);
+  },
 
+  averageRating: function(){
+  var length = this.model.get('averageRating').length
+
+    if (length){
+      console.log("add rating");
+    } else {
+    this.model.get('averageRating').push(this.model.get('rating'));
+    }
 
   }
 
